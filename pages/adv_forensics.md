@@ -1,6 +1,6 @@
 ## Week 2 - Advanced Forensics              
 ### Introduction
-After covering basics of malware, next is the topic of Advanced Forensics. 
+After covering basics of malware, the next topic is Advanced Forensics. 
 Forensics is a way to use scientific techniques (data analysis) to investigate and detect crimes.
  The crimes I'll focus on are malware-related.
 
@@ -22,10 +22,11 @@ guilty as well.
 ### Categories of Forensics
 Besides case types, forensics cases can be classified into 3 categories depending on 
 present state of system to be analyzed.
-* Live forensics: device is powered ON and has some data still stored in RAM. RAM contents
- should be saved for later analysis before shutting device down.
-* Post-mortem based forensics: device is powered off. No available data is present in RAM,
-only storage media on device is backed up for further analysis.
+* ***Live forensics***: device is powered ON and has some data still stored in RAM. RAM contents
+ are saved for later analysis before shutting device down. Footprint of backup program is kept low
+ to not destroy memory contents.
+* ***Post-mortem based forensics***: device is powered off. No available data is present in RAM,
+only non-volatile storage media on device is used for further analysis.
 * Network based forensics: Investigator doesn't have physical access to PC, only network access. 
 
 ### Basics of Forensics
@@ -38,10 +39,10 @@ For a more expanded view of this process, see flowchart below:
 ![alt text](ir_process.jpg "Flowchart of Investigating Case")
 
 In order to complete these steps, there are also important guidelines a fellow investigator should follow:
-* Minimize data loss. 
+* ***Minimize data loss.*** 
 See ***Locard's Exchange Principle*** - You cannot interact with a live system without having some effect 
 on it. If interaction is necessary, try to minimize it's effect and record your actions in that case.
-* Record everything.
+* ***Record everything.***
 Make note of start times at beginning of investigation/data backup.If PC is on, record its time. Record
  exactly what you did with the system. If there was contamination, record those details. Finally, be explicit, use screenshots. 
 
