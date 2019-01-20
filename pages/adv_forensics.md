@@ -60,7 +60,10 @@ Evidence analysis is rarely done without using software tools. This is especiall
 Hard drives now have terabytes of storage, impossible to analyze thoroughly and quickly without software tools. 
 Some common tools used for forensic investigation are listed below
 
-* ***FTK Imager***: allows user to backup PC memory(RAM), storage, master boot record, and page file data for forensic analysis
+* ***FTK Imager***: allows user to backup PC memory(RAM), storage, master boot record, and page file data for forensic analysis.
+This program is used to record all of the forensic data for analysis later. Since it has a GUI interface, it's not the best one 
+to use to minimize RAM footprint impact.
+![alt text](ftki_screenshot.jpg "FTK Imager screenshot")
 
 * ***Volatility***: an advanced memory forensics framework written in Python, command-line
 •	Write & create your own plugins
@@ -71,8 +74,8 @@ o	volatility.exe –f <name_of_memdump> plugin
 o	-imageinfo: reports the OS type based on memory dump structure
 o	-psscan: lists processes running in memory at time of dump
 o	-pstree: draws all running processes in parent/child tree
+
 * ***PhotoRec***: restores and carves out files in a referenced disk image based on header data. 
 After running program, the output directory will contain all files recovered.
-
-
+![alt text](prec_screenshot.jpg "PhotoRec screenshot")
 [Go Home](../index.md) 
