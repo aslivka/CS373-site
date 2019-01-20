@@ -22,12 +22,12 @@ guilty as well.
 ### Categories of Forensics
 Besides case types, forensics cases can be classified into 3 categories depending on 
 present state of system to be analyzed.
-* ***Live forensics***: device is powered ON and has some data still stored in RAM. RAM contents
+* ***Live forensics*** - device is powered ON and has some data still stored in RAM. RAM contents
  are saved for later analysis before shutting device down. Footprint of backup program is kept low
  to not destroy memory contents.
-* ***Post-mortem based forensics***: device is powered off. No available data is present in RAM,
+* ***Post-mortem based forensics*** - device is powered off. No available data is present in RAM,
 only non-volatile storage media on device is used for further analysis.
-* Network based forensics: Investigator doesn't have physical access to PC, only network access. 
+* ***Network based forensics*** - Investigator doesn't have physical access to PC, only network access. 
 
 ### Basics of Forensics
 To conduct an excellent forensic investigation, an investigator should follow 4 basic steps:
