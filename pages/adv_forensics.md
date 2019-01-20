@@ -1,55 +1,71 @@
 ## Week 2 - Advanced Forensics              
 
-This week's post will focus on discussing on Malware. I'll try to summarize what malware is, why is it created, and how its operates. 
-After that, I'll briefly show how to analyze malware and share some useful analysis tools as well.
+After covering basics of malware, next is the topic of Advanced Forensics. 
+Forensics is a way to use scientific techniques (data analysis) to investigate and detect crimes.
+ The crimes I'll focus on are malware-related.
+A ***forensic investigator*** is trained to prove what happens on a system presented to him,
+ ***NOT*** to prove if the suspect is guilty or not. It's important to realize this so that
+all evidence can be preserved for later analysis. This data can then be used establish an
+evidence-based history of events that occurred on a system under investigation. If the 
+history proves the suspect is guilty is mostly irrelevant to the investigator, his job
+is to establish what happened on the system. Incidentally, this may prove the suspect 
+guilty as well.
+Here are the major case types in forensics:
+* Fraud
+* Intellectual Property Theft
+* Hacker Intrusions / Data Breaches
+* Inappropriate Use of Internet
+* Child Exploitation
+* eDiscovery supporting: Civil Litigation and  Litigation 
 
-### What is Malware
-Malware is a shortened name for ***MAL***icious soft***WARE***. It is usually transmitted by clicking a link in email/web page or inserting a malicious USB stick. **The most common way to infect a PC is through the user.**
+### Categories of Forensics
+Besides case types, forensics cases can be classified into 3 categories depending on 
+present state of system to be analyzed.
+* Live forensics: device is powered ON and has some data still stored in RAM. RAM contents
+ should be saved for later analysis before shutting device down.
+* Post-mortem based forensics: device is powered off. No available data is present in RAM,
+only storage media on device is backed up for further analysis.
+* Network based forensics: Investigator doesn't have physical access to PC, only network access. 
 
-Example of XP malware:
+### Basics of Forensics
+To conduct an excellent forensic investigation, an investigator should follow 4 basic steps:
+* Identify evidence
+* Preserve evidence
+* Analyze evidence
+* Present results
+For a more expanded view of this process, see flowchart below:
+![alt text](ir_process.jpg "Flowchart of Investigating Case")
 
-![Malware example](malware_example.png "Malware example")
+In order to complete these steps, there are also important guidelines a fellow investigator should follow:
+* Minimize data loss. 
+See ***Locard's Exchange Principle*** - You cannot interact with a live system without having some effect 
+on it. If interaction is necessary, try to minimize it's effect and record your actions in that case.
+* Record everything.
+Make note of start times at beginning of investigation/data backup.If PC is on, record its time. Record exactly what you did with the system. If there was contamination, record those details. Finally, be explicit, use screenshots. 
 
+### Forensic Evidence
+What is evidence? It's anything you can use to disprove/prove a fact. In context of computer forensics, evidence can be found at many different layers: network(firewalls), OS, databases and applications, peripherals, etc. 
+#### Handling Evidence
+To minimize data loss, you must preserve integrity of the evidence at all times:
+* Create a cryptographic hash of the entire disk and each partition (MD5 or SHA1)
+* Create bit-images copies and analyze them
+* Create a cryptographic hash of the copy and compare with the results obtained from the original. They MUST match!
 
-There are many types of malware. I've listed some major ones below.
-* Viruses: program written to enter to your computer and damage/alter your files/data
-* Trojans: a destructive program that looks as a genuine application. Ex: fake antiviruses.
-* Types: Backdoor, downloader, password stealer, keylogger, bot
-* Potentially Unwanted Programs: adware, spyware, tools
-* Ransom-ware: program that encrypts user's files on PC until he/she send money to unlock them
-* POS malware: records and transmits credit card numbers processed by POS terminals
-* Targeted malware
+### Forenstice Software Tools (free)
+Evidence analysis is rarely done without using software tools. This is especially true today with today's technology. Hard drives now have terabytes of storage, impossible to analyze thoroughly and quickly without software tools. Some common tools used for forensic investigation are listed below
 
-### Why Does Malware Exist?
-Malware exists for many reasons. Usually the motives for malware creation are: money, revenge, ideology, excitement.
-Common targets of Malware are: large companies, governments, contractors, etc.
+* FTK Imager: allows user to backup PC memory(RAM), storage, master boot record, and page file data for forensic analysis
 
-### Analyzing Malware
-#### Replication of Malware
-Replication of malware's behavior allows us to study how malware behaves and design countermeasures against it and possibly the family of malware it belongs to.
-To successfully replicate malware behavior while not damaging your test setup, follow 3 simple steps:
-* Create an isolated environment. Ex: standalone PC with insecure internet access
-* Use a hardened Virtual Machine(VM). Some viruses check for VMs but there are workarounds for that.
-* Add Bait. Ex: If it's keylogger for credit card numbers, enter fake numbers in PC.
-
-#### Useful Software Tools
-While replicating malware's behavior, use some of these tools to record malware's actions on the test PC.
-* FileInsight (static analysis) - program that analyzes binary files for useful malware info, has many plugins
-* FakeNet - creates a fake network to allow analyzing malware in closed local network environment
-* AntiSpy
-* Process Explorer - more detailed version of Task Manager
-* Process Monitor - records all events made by processes in a specified time duration
-* FlyPaper - blocks network traffic and prevents malware from exiting. Great for step-by-step analysis of malware execution
-
-#### Analyzing Data From Replication
-After replicating malware's behavior,  now comes the hardest part: analyzing the data gathered. Usually, analysis
-becomes easier as one becomes experienced. 
-
-For Lab 1, this week I analyzed malware evil.exe. According to research, it was used by Chinese criminals to infiltrate Korean banks. [Article Link](https://blog.avast.com/2013/03/19/analysis-of-chinese-attack-against-korean-banks/). The malware schedules a series of daily tasks that runs svchest.exe malware file. Then, that harmlessly-named file communicates with a website to coordinate activities. See screenshot of this malware file's contents below, extracted by FileInsight.
-
-![alt text](Lab1_malware_code.jpg "Snapshot of malware")
-
-It's fairly complicated malware program. The other files like tonji2.exe and pao.exe also run in the background depending if the scheduled program is running at the time. This malware seems to be a backdoor program with keylogger features as well. The backdoor part explains the downloading by svchest.exe of additional files like funbots.txt and system.yf (as seen in screenshot). The keylogger/datalogger portion exlains why the malware runs multiple times every day, sending newly gathered data back to the malicious sites.
+* Volatility: an advanced memory forensics framework written in Python, command-line
+•	Write & create your own plugins
+•	Lot of useful plugins for malware detection
+•	Usage:
+volatility.exe  –h: lists all of the plugin options
+o	volatility.exe –f <name_of_memdump> plugin
+o	-imageinfo: reports the OS type based on memory dump structure
+o	-psscan: lists processes running in memory at time of dump
+o	-pstree: draws all running processes in parent/child tree
+* PhotoRec: restores and carves out files in a referenced disk image based on header data. After running program, the output directory will contain all files recovered.
 
 
 [Go Home](../index.md) 
