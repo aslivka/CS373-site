@@ -58,7 +58,7 @@ To minimize data loss, you must preserve integrity of the evidence at all times:
 ### Forensic Software Tools (free)
 Evidence analysis is rarely done without using software tools. This is especially true today with today's technology. 
 Hard drives now have terabytes of storage, impossible to analyze thoroughly and quickly without software tools. 
-Some common tools used for forensic investigation are listed below
+Some common tools used for forensic investigation are listed below.
 
 * ***FTK Imager***: allows user to backup PC memory(RAM), storage, master boot record, and page file data for forensic analysis.
 This program is used to record all of the forensic data for analysis later. Since it has a GUI interface, it's not the best one 
