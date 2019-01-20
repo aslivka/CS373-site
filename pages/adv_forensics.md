@@ -36,7 +36,7 @@ To conduct an excellent forensic investigation, an investigator should follow 4 
 * Analyze evidence
 * Present results
 For a more expanded view of this process, see flowchart below:
-![alt text](ir_process.jpg "Flowchart of Investigating Case")
+![alt text](ir_process.jpg "Flowchart of Investigating Cases")
 
 In order to complete these steps, there are also important guidelines a fellow investigator should follow:
 * ***Minimize data loss.*** 
