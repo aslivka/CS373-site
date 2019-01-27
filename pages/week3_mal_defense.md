@@ -68,6 +68,14 @@ rule malware{
 		all of them
 }
 ```
+#### Malware Behavior
+Malware tries to download some files after going to some web site links using Internet Explorer. 
+After that it executes Dx.bat and qusla.exe. Those programs add Chinese language and font support 
+to current computer to view them correctly. Next, the program modifies the sets up qusla.exe to 
+run on every startup of Windows OS. Finally, it modifies starting page for Internet Explorer to 
+http://www.3392.cn, a Chinese site. The last step explains why this malware was classified as 
+StartPage malware by McAfee. For more detailed analysis see static and dynamic analysis sections
+below:
 
 ####Static Analysis
 First, the hash for the files was entered into VirusTotal database. It was confirmed as malware type Trojan:Win32/Startpage, with original filename hau.exe. This malware has Chinese origin.
