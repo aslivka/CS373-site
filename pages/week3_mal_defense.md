@@ -57,12 +57,14 @@ Date/Time of your “posting”: 19/01/27
 Malware hash: 00670f2B9631D0F97C7CFC6C764DD9D9
 ***Yara signature:*** 
 
-***rule*** malware{
+```
+rule malware{
 	strings:
 		$a=”hau”
 	condition:
 		all of them
 }
+```
 
 ####Static Analysis
 First, the hash for the files was entered into VirusTotal database. It was confirmed as malware type Trojan:Win32/Startpage, with original filename hau.exe. This malware has Chinese origin.
