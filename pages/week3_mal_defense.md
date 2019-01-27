@@ -94,7 +94,7 @@ Next, file was statically analyzed with FileInsight. This particular malware fil
 Then, it adds qusla.exe to Windows startup by creating the appropriate registry key at HKLM\Software\Microsoft\Windows\CurrentVersion\Run
 *	Finally, it changes start page for Internet explorer to http://www.3392.cn.
 See FileInsight screenshot for condensed string dump of program’s contents
-![alt text](w3_insight_shot0.jpg "FileInsight screenshot of malware")
+![alt text](images/w3_insight_shot0.jpg "FileInsight screenshot of malware")
 
 #### Dynamic Analysis
 To simplify this type of analysis, malware analysis program Cuckoo was used. 
@@ -103,15 +103,15 @@ the malware’s behavior.
 According to Cuckoo’s logs:
 
 * It created Dx.bat file, a batch file that runs commands
-![alt text](w3_cuckoo_shot1.jpg "Cuckoo screenshot 1")
+![alt text](images/w3_cuckoo_shot1.jpg "Cuckoo screenshot 1")
  
 * Created KERNELBASE.dll.mui. This is a Multilingual User Interface file, 
 a translation file associated with Windows Server 2011 to support different 
 languages. In this case, it’s probably added to support Chinese character fonts.
-![alt text](w3_cuckoo_shot2.jpg "Cuckoo screenshot 2")
+![alt text](images/w3_cuckoo_shot2.jpg "Cuckoo screenshot 2")
  
 * Tries to search for qusla.exe file but doesn’t find. This is because VM 
 doesn’t have internet access to outside so the file wasn’t ever downloaded.
-![alt text](w3_cuckoo_shot3.jpg "Cuckoo screenshot 3")
+![alt text](images/w3_cuckoo_shot3.jpg "Cuckoo screenshot 3")
 
 [Go Home](../index.md) 
