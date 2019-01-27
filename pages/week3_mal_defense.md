@@ -96,7 +96,6 @@ Then, it adds qusla.exe to Windows startup by creating the appropriate registry 
 See FileInsight screenshot for condensed string dump of program’s contents
 ![alt text](w3_insight_shot0.jpg "FileInsight screenshot of malware")
 
-
 #### Dynamic Analysis
 To simplify this type of analysis, malware analysis program Cuckoo was used. 
 After having done static analysis, dynamic analysis added more context to 
