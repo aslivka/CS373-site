@@ -53,7 +53,7 @@ It’s a freeware program, LADS, that lists alternate data streams of an NTFS di
 It uses powerful system calls similar to malware to perform its harmless functions. 
 It’s also written in Delphi, commonly used malware language, but that’s a false clue.
 
-#### Report
+***Report***
 Name: Artem Slivka
 
 Post Date/Time: 19/01/27
