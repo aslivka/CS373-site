@@ -55,7 +55,7 @@ It’s also written in Delphi, commonly used malware language, but that’s a fa
 
 Name: Artem Slivka
 
-Date/Time of your “posting”: 19/01/27
+Post Date/Time: 19/01/27
 
 Malware hash: 00670f2B9631D0F97C7CFC6C764DD9D9
 
