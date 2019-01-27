@@ -80,8 +80,8 @@ Next, file was statically analyzed with FileInsight. This particular malware fil
 *	http://www.ifengw.com/ete.htm
 *	Tries executing msns.exe , a file it probably downloaded
 *	Modifies Quick Launch shortcul link for Internet Explorer to open up http://www.3392.cn
-*	Downloads files:  c:\qusla.exe, Dx.bat
-*	Program assigns all possible permissions to c:\qusla.exe:	attrib +r +s +h c:\qusla.exe
+*	Downloads files:  ***c:\qusla.exe, Dx.bat ***
+*	Program assigns all possible permissions to ***c:\qusla.exe***:	attrib +r +s +h c:\qusla.exe
 Then, it adds qusla.exe to Windows startup by creating the appropriate registry key at HKLM\Software\Microsoft\Windows\CurrentVersion\Run
 *	Finally, it changes start page for Internet explorer to http://www.3392.cn.
 See FileInsight screenshot for condensed string dump of program’s contents
