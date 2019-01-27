@@ -102,16 +102,16 @@ After having done static analysis, dynamic analysis added more context to
 the malware’s behavior. 
 According to Cuckoo’s logs:
 
-* It created Dx.bat file, a batch file that runs commands
+* It created ***Dx.bat*** file, a batch file that runs commands
 ![alt text](images/w3_cuckoo_shot1.jpg "Cuckoo screenshot 1")
  
-* Created KERNELBASE.dll.mui. This is a Multilingual User Interface file, 
+* Created ***KERNELBASE.dll.mui*** file. This is a Multilingual User Interface file, 
 a translation file associated with Windows Server 2011 to support different 
 languages. In this case, it’s probably added to support Chinese character fonts.
 ![alt text](images/w3_cuckoo_shot2.jpg "Cuckoo screenshot 2")
  
-* Tries to search for qusla.exe file but doesn’t find. This is because VM 
-doesn’t have internet access to outside so the file wasn’t ever downloaded.
+* Tries to search for ***qusla.exe*** file but doesn’t find it. This is because VM 
+doesn’t have outside internet access so the file wasn’t ever actually downloaded.
 ![alt text](images/w3_cuckoo_shot3.jpg "Cuckoo screenshot 3")
 
 [Go Home](../index.md) 
