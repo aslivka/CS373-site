@@ -14,25 +14,25 @@ An attack graph describes how malware operates. The real graph is fairly big and
 Below is a list of ways to defend against Malware. I won't go into much detail in the list.
 Much of this post will focus on last Lab, analyzing 4 samples and reporting results.
 
-***First Contact***
+*** First Contact ***
 
 *	Spam: Anti-spam
 *	Network: Firewall, Network IPS (intrusion prevention software)
 *	Web: IP, Domain, & URL reputation
 *	Physical access: Disk encryption, also blocking physical access to USB ports using epoxy, or strict company policy
 
-***Local Execution***
+*** Local Execution ***
 *	Spam: Client-side content filtering
 *	Network: Network IPS
 *	Web: Content filtering/scanning
 *	Host: Host IPS, Anti-virus, Whitelisting
 
-***Establish Presence***
+*** Establish Presence ***
 *	Host: Anti-virus, Whitelisting, HIPS
 *	Network: Firewall, Network IPS
 *	Web: IP, Domain, & URL reputation 
 
-***Malicious Activity*** 
+*** Malicious Activity *** 
 *	Host: Anti-virus
 *	Network: NIPS, Firewall
 *	Web: IP, Domain, URL rep & content filtering
@@ -41,12 +41,12 @@ Much of this post will focus on last Lab, analyzing 4 samples and reporting resu
 ### Week 3 Lab - Malware Report
 From the 4 given samples, 3 were judged malware
 
-***Malicious:*** 
+*** Malicious: *** 
 * 068D5B62254DC582F3697847C16710B7
-* ***00670f2B9631D0F97C7CFC6C764DD9D9 (Analyzed malware)***
+* *** 00670f2B9631D0F97C7CFC6C764DD9D9 (Analyzed malware) ***
 * A1874F714F7A15399B9FAE968180B303
 
-***Not malicious:***
+*** Not malicious: ***
 * 4844FD851088A11E240CFE5B54096209 
 
 It’s a freeware program, LADS, that lists alternate data streams of an NTFS directory. 
@@ -59,7 +59,7 @@ Post Date/Time: 19/01/27
 
 Malware hash: 00670f2B9631D0F97C7CFC6C764DD9D9
 
-***Yara signature:*** 
+*** Yara signature: *** 
 
 ```
 rule malware{
@@ -89,8 +89,8 @@ Next, file was statically analyzed with FileInsight. This particular malware fil
 *	http://www.ifengw.com/ete.htm
 *	Tries executing msns.exe , a file it probably downloaded
 *	Modifies Quick Launch shortcul link for Internet Explorer to open up http://www.3392.cn
-*	Downloads files:  ***c:\qusla.exe, Dx.bat ***
-*	Program assigns all possible permissions to ***c:\qusla.exe***:	attrib +r +s +h c:\qusla.exe
+*	Downloads files:  *** c:\qusla.exe, Dx.bat ***
+*	Program assigns all possible permissions to *** c:\qusla.exe *** :	attrib +r +s +h c:\qusla.exe
 Then, it adds qusla.exe to Windows startup by creating the appropriate registry key at HKLM\Software\Microsoft\Windows\CurrentVersion\Run
 *	Finally, it changes start page for Internet explorer to http://www.3392.cn.
 See FileInsight screenshot for condensed string dump of program’s contents
@@ -102,15 +102,15 @@ After having done static analysis, dynamic analysis added more context to
 the malware’s behavior. 
 According to Cuckoo’s logs:
 
-* It created ***Dx.bat*** file, a batch file that runs commands
+* It created *** Dx.bat *** file, a batch file that runs commands
 ![alt text](images/w3_cuckoo_shot1.jpg "Cuckoo screenshot 1")
  
-* Created ***KERNELBASE.dll.mui*** file. This is a Multilingual User Interface file, 
+* Created *** KERNELBASE.dll.mui *** file. This is a Multilingual User Interface file, 
 a translation file associated with Windows Server 2011 to support different 
 languages. In this case, it’s probably added to support Chinese character fonts.
 ![alt text](images/w3_cuckoo_shot2.jpg "Cuckoo screenshot 2")
  
-* Tries to search for ***qusla.exe*** file but doesn’t find it. This is because VM 
+* Tries to search for *** qusla.exe *** file but doesn’t find it. This is because VM 
 doesn’t have outside internet access so the file wasn’t ever actually downloaded.
 ![alt text](images/w3_cuckoo_shot3.jpg "Cuckoo screenshot 3")
 
