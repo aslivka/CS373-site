@@ -38,7 +38,7 @@ Much of this post will focus on last Lab, analyzing 4 samples and reporting resu
 *	Web: IP, Domain, URL rep & content filtering
 *	Data Loss Prevention
 
-### Week 3 Lab - Malware Report
+### Week 3 Lab and Malware Report
 From the 4 given samples, 3 were judged malware
 
 ***Malicious:*** 
@@ -53,6 +53,7 @@ It’s a freeware program, LADS, that lists alternate data streams of an NTFS di
 It uses powerful system calls similar to malware to perform its harmless functions. 
 It’s also written in Delphi, commonly used malware language, but that’s a false clue.
 
+#### Report
 Name: Artem Slivka
 
 Post Date/Time: 19/01/27
