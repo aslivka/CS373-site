@@ -14,25 +14,25 @@ An attack graph describes how malware operates. The real graph is fairly big and
 Below is a list of ways to defend against Malware. I won't go into much detail in the list.
 Much of this post will focus on last Lab, analyzing 4 samples and reporting results.
 
-*** First Contact ***
+***First Contact***
 
 *	Spam: Anti-spam
 *	Network: Firewall, Network IPS (intrusion prevention software)
 *	Web: IP, Domain, & URL reputation
 *	Physical access: Disk encryption, also blocking physical access to USB ports using epoxy, or strict company policy
 
-*** Local Execution ***
+***Local Execution***
 *	Spam: Client-side content filtering
 *	Network: Network IPS
 *	Web: Content filtering/scanning
 *	Host: Host IPS, Anti-virus, Whitelisting
 
-*** Establish Presence ***
+***Establish Presence***
 *	Host: Anti-virus, Whitelisting, HIPS
 *	Network: Firewall, Network IPS
 *	Web: IP, Domain, & URL reputation 
 
-*** Malicious Activity *** 
+***Malicious Activity*** 
 *	Host: Anti-virus
 *	Network: NIPS, Firewall
 *	Web: IP, Domain, URL rep & content filtering
