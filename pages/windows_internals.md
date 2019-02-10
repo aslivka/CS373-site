@@ -55,10 +55,7 @@ by intercepting function calls or messages or events passed between software com
     *	Rootkit’s memory can give away its associated file on disk. The problem is it can be difficult to track kernel memory
 *	 removing dependency on files
     *	Scanners based on direct file-system (FS) parsers worked well
-    *	Therefore having no file in the FS helps rootkits, so : 
-        *	Move malicious code to boot process: MBR or VBR or  ???
-        *	Move malicious code to bios L 
-        *	And move encrypted malicious code to raw sectors or as a file
+    *	Therefore having no file in the filesystem helps rootkits
 *	 untrusting the trusted
 
 ### Limited Self Preservation 
@@ -85,9 +82,9 @@ and step through to find hook memory locations in rootkit memory space.
 
 #### Results
 The rootkit hooked the following 3 system APIs:
-* NtEnumerateValueKey
-* NtQueryDirectoryFile
-* NtQuerySystemInformation
+* ***NtEnumerateValueKey***
+* ***NtQueryDirectoryFile***
+* ***NtQuerySystemInformation***
 
 Using Tuluka, SST table changes were clearly detected:
 
