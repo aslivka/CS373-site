@@ -1,10 +1,9 @@
 ## Week 5 - Windows Internals              
 ### Introduction
 This week's material focuses on learning about Windows kernel and other parts of Windows internals. 
-To more easily understand these components, we learned how rootkits operate and did a couple Labs 
-involving them. Rootkits usually infiltrate the kernel modules or various important storage sectors
-to gain unathorized access. Learning about how to they gain access, made me understand better the dynamics 
-between OS, kernel, and other non-user mode parts of system.
+Rootkits are programs usually infiltrate the kernel modules or various important storage sectors
+to gain unathorized access. Learning about how they gain access, let me understand internals of Windows OS
+better. 
 
 Besides summarizing lecture content for this week, I also included details on Agony rootkit Lab, with screenshots.
 All Labs were performed with Tuluka and Cuckoo to run the malware and Windbg to trace the rootkit's instructions
@@ -76,12 +75,32 @@ by intercepting function calls or messages or events passed between software com
 *	Untrusting the AV and whitelisting of legitimate applications
 
 ### Agony Lab
+This lab focuses on analyzing rootkit Agony. Focus was on mostly
+tracking exit points from malware code back to the kernel APIs hooked by malware.
 #### Software Tools
 Software programs used for Lab: Tuluka, Cuckoo, and WinDbg. Cuckoo was used to run the malware
 and record its actions into a log file. Tuluka was used to identify changes in SSDT table done by
 rootkit to allow hooks into system-level modules. Finally, WinDbg was used in remote mode to debug
 and step through to find hook memory locations in rootkit memory space.
 
+#### Results
+The rootkit hooked the following 3 system APIs:
+* NtEnumerateValueKey
+* NtQueryDirectoryFile
+* NtQuerySystemInformation
+
+Using Tuluka, SST table changes were clearly detected:
+
+![alt text](../images/w5_lab_hooks.jpg "Tuluka Agony screenshot")
+
+To track down where rootkit returned control back to system API,
+a breakpoint was placed at memory address in Current column. Then,
+using system disassemly, I stepped through the instructions until
+the original API was called back by rootkit. 
+
+See screenshot below for offset calculations
+
+![alt text](../images/w5_lab_offsets.jpg "Agony offsets")
 
 
 [Go Home](../index.md) 
