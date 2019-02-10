@@ -16,6 +16,7 @@ through the kernel.
 *	***Rootkits are one of the best ways to learn about kernel security challenges***
 *	Challenges once malicious code enters kernel:
 *	Harder for rootkits to enter 64 bit kernel
+
 See below for a pic of generalized OS architecture model.
 
 ![alt text](../images/w5_system_arch.jpg "OS arch. model")
