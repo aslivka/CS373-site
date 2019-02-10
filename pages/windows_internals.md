@@ -54,8 +54,7 @@ by intercepting function calls or messages or events passed between software com
 *	disassociating memory from file-on-disk
     *	Rootkit’s memory can give away its associated file on disk. The problem is it can be difficult to track kernel memory
 *	 removing dependency on files
-    *	Scanners based on direct file-system (FS) parsers worked well
-    *	Therefore having no file in the filesystem helps rootkits
+    *	Scanners based on direct file-system parsers worked well
 *	 untrusting the trusted
 
 ### Limited Self Preservation 
