@@ -16,12 +16,12 @@ through the kernel.
 *	***Rootkits are one of the best ways to learn about kernel security challenges***
 *	Challenges once malicious code enters kernel:
 *	Harder for rootkits to enter 64 bit kernel
-*	Rootkits can infiltrate 64 bit OS Kernel by
-
-### Kernel memory
-In this section, we'll focus on Kernel. See below for a pic of generalized OS architecture model.
+See below for a pic of generalized OS architecture model.
 
 ![alt text](../images/w5_system_arch.jpg "OS arch. model")
+
+### Kernel memory
+In this section, we'll focus on kernel memory
 *	Is a flat memory model with no security separation. 
 *	Any kernel driver can access any part of memory. 
 *	Composed of windows kernel (ntoskrnl.exe) as well as driver code. 
