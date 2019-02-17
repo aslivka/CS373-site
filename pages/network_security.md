@@ -5,13 +5,12 @@ and defenses against them.
 
 ### Why Do We Need Network Security?
 It seems like an obvious question but here a couple reasons
-Why do we need network security?
-*	Helping Host-based protections
+*	Help Host-based protections
     *	Keep dangerous hosts/data out  / Create a safe space 
     *	Prevent exfiltration of critical data
-*	Threats come in from the network, companies to defend themselves against them
+*	Threats come in from the network, companies need to defend themselves against them
     *	DDoS and atttacks from network in (e.g., Stack overflow, Morris Worm)
-*	Threats out ON the network: Worms, Botnets, and misc  
+*	Keep threats out ON the network: Worms, Botnets, and misc  
 
 #### Network-based Protection Stategies
 *	Positive policy (whitelists)
@@ -26,6 +25,7 @@ Why do we need network security?
 At every layer of the protocols, there is a general rule whose application can lead to enormous benefits in robustness and interopability.
 *   Be liberal in what you accept, and conservative in what you send.
 *   Host software should be prepared to survive other mis-behaving hosts
+
 This principle applies to many well-known protocols like TCP/IP, etc. It is still relevant today, I think, if one wants to create a robust protocol that doesn't rely
 on hosts transmitting data with perfect compliance to protocol. It's difficult to anticipate all combinations of packets that can be received but the protocol can still
 choose to ignore some invalid packet structures without choking on the packet.
@@ -49,10 +49,12 @@ and how we can deal with them in order to protect networks.
     *	Overlapping IP segments and Data at end of datagram or file
 
 #### Reconnaisance
-Active
+***Active***
+
 *	Attacker wants to attack vulnerable machines on a network
 *	Attacker needs to find addresses for services that can be attacked
-Passive
+
+***Passive***
 *	Attacker is able to see data on the network (wiring closet, ISP)
 *	Attacker wants to learn about people
 
