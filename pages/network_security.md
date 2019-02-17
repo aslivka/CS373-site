@@ -1,10 +1,10 @@
-## Week 5 - Network Security           
+## Week 6 - Network Security           
 ### Introduction
 This week's material focuses on topic of Network Security. It discusses various types of security threats 
 and defenses against them. 
 
 ### Why Do We Need Network Security?
-It seems like an obvious question but here a couple reasons
+It seems like an obvious question but here are couple reasons:
 *	Help Host-based protections
     *	Keep dangerous hosts/data out  / Create a safe space 
     *	Prevent exfiltration of critical data
@@ -30,7 +30,7 @@ This principle applies to many well-known protocols like TCP/IP, etc. It is stil
 on hosts transmitting data with perfect compliance to protocol. It's difficult to anticipate all combinations of packets that can be received but the protocol can still
 choose to ignore some invalid packet structures without choking on the packet.
 
-### Network Security Threats
+### Network Threats
 In this section, we'll focus on discussing major types of security threats
 and how we can deal with them in order to protect networks.
 
@@ -67,7 +67,7 @@ and how we can deal with them in order to protect networks.
 *	Application vulnerability exploitation: making the application unavailable by crashing it or the OS.
 *	Other finite resources: sockets, TCP listen queue, connection pool, etc
 
-### Defenses
+### Network Defenses
 After discussing some of the major network threats, next is how we can defend
 against them.
 *   Packet Filtering
@@ -77,8 +77,8 @@ against them.
     *	MITM: Terminate TCP connections and establish new ones
     *	Inspect and sometimes modify application data to prevent attacks
     *	Provide nuanced and granular access control based on application specific information.
-*   NextGen Firewalls(NGFW) - use stronger links between endpoints and firewalls to identify threat source
-*   NIPS(Network Intrustion Prevent System) - evaluates packet data against known and unknown attacks
+*   NextGen Firewalls (NGFW) - use stronger links between endpoints and firewalls to identify threat source
+*   NIPS (Network Intrustion Prevent System) - evaluates packet data against known and unknown attacks
 
 
 [Go Home](../index.md) 
