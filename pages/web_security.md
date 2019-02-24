@@ -1,4 +1,4 @@
-## Week 7 - wEB Security           
+## Week 7 - Web Security           
 ### Introduction
 This week's material focuses on topic of Web Security. It's a very important topic
 because 95% of malware is delivered via the web. This page will focus on some examples
