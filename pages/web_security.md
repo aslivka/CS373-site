@@ -12,7 +12,7 @@ flowchart below for more details.
  ![alt text](../images/w7_web_malware_evo.jpg "Evolution of Web-malware attacks")
 
 ### User-level Attacks
-*	Users can be ARE the weak link.
+*	Users ARE the weak link.
     *	Hardened/current browser/OS will not help.
     *	Exploit common user traits: Impatient, lazy, self-proclaimed omniscience, clickaholic 
 *	Direct the user to malicious content through their own actions.
