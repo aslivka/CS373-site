@@ -59,12 +59,12 @@ Some of the attack types are described in more detail below.
     *	In reality, some progress has been made, although we are always a step behind. 
 
 ### Browser Attacks
-*	Browser Exploits - browser downloads, renders and executes maliciously crafted web content.
-*	MITM(man in the middle) and MITB(man in the browser) attacks
-*	SQL Injection - circumvent authentication/authorization in SQL database, then reveal private data
-*	Cross-site scripting (XSS) – injects client-sidescript into other user’s browsers (bypassing SOP)
-*	Cross-site Request forgery (XSRF):
-    *	 exploit the server’s trust in the browser
+*	***Browser Exploits*** - browser downloads, renders and executes maliciously crafted web content.
+*	***MITM(man in the middle)*** and ***MITB(man in the browser)*** attacks
+*	***SQL Injection*** - circumvent authentication/authorization in SQL database, then reveal private data
+*	***Cross-site scripting (XSS)*** – injects client-sidescript into other user’s browsers (bypassing SOP)
+*	***Cross-site Request forgery (XSRF)***:
+    *	exploit the server’s trust in the browser
     *	execute malicious actions against user (as that user) on their trusted server
 *	Using vulnerabilities in new features of HTML5
 
