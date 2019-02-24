@@ -1,7 +1,7 @@
 ## Week 7 - wEB Security           
 ### Introduction
 This week's material focuses on topic of Web Security. It's a very important topic
-because 95% of malware is delived via the web. This page will focus on some examples
+because 95% of malware is delivered via the web. This page will focus on some examples
 of web attacks: user or browser-focused. It will also mention some software tools 
 useful for analyzing visited domains and malware encountered by user.
 
@@ -69,13 +69,13 @@ Some of the attack types are described in more detail below.
 *	Using vulnerabilities in new features of HTML5
 
 ### Web Malware Tools
-*	Alexa – useful for determining site popularity and prevalence
-*	IPVoid – check an IP against a large list of IP blacklists
-*	ChecksShortURL  - URL explander service for most short URL services
-*	Webutation  - URL reputation clearinghouse
-*	Web Inspector – online web scanning tool. Provides list of recently detected bad sites
-*	Virus Total  - web scanning tool, provides malware and URL search
-*	Linux whois and DIG  - provides DNS resolver info
+*	***Alexa*** – useful for determining site popularity and prevalence
+*	***IPVoid*** – check an IP against a large list of IP blacklists
+*	***ChecksShortURL***  - URL explander service for most short URL services
+*	***Webutation***  - URL reputation clearinghouse
+*	***Web Inspector*** – online web scanning tool. Provides list of recently detected bad sites
+*	***Virus Total***  - web scanning tool, provides malware and URL search
+*	***Linux whois and DIG***  - provides DNS resolver info
 
 
 [Go Home](../index.md) 
