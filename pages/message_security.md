@@ -37,6 +37,7 @@ classification, just with tokens/attributes changed.
     *	many companies own RBLs. How can one trust a company with an RBL? 
 *	***Heuristic filters***  - popular technique of email-filtering. It uses general spam
  rules to classify incoming email based on message data characteristics as spam/not spam. 
+
 Ex: if email contains Viagra or Ophrah string and some other tokens, it’s spam.
 *	***Bayesian (Statistical) filters *** – popular technique of email-filtering. 
 It correlates the use of tokens (typically words, or sometimes other things), 
@@ -44,7 +45,7 @@ with spam and non-spam e-mails and then using Bayes' theorem to calculate a
  probability that an email is or is not spam.
 
 
-### Classic Spam Messages
+### Classic Spam Techniques
 *	***advance-fee scam*** – promising victim a large sum in return for small up-front payment
     *	Other names: 419 phishing or Nigerian Prince scam
 *	***Canadian pharmacy*** – spam message advertises cheap pharmaceuticals without prescription. 
@@ -53,7 +54,7 @@ Takes client’s order, then never sends anything.
  and then quickly sells stock to profit from news.
 
 ### Fighting Against Spam
-There are primarily two ways to fight against spam (not including educating user). They are filtering
+There are primarily two ways to fight against spam (excluding educating user). They are filtering
 messages by reputation or content. 
 *	***Reputation-driven***
     *	IP
