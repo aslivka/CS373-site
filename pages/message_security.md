@@ -39,7 +39,7 @@ classification, just with tokens/attributes changed.
  rules to classify incoming email based on message data characteristics as spam/not spam. 
 
 Ex: if email contains Viagra or Ophrah string and some other tokens, it’s spam.
-*	***Bayesian (Statistical) filters *** – popular technique of email-filtering. 
+*	***Bayesian (Statistical) filters*** – popular technique of email-filtering. 
 It correlates the use of tokens (typically words, or sometimes other things), 
 with spam and non-spam e-mails and then using Bayes' theorem to calculate a
  probability that an email is or is not spam.
