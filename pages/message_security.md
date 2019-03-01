@@ -37,7 +37,6 @@ classification, just with tokens/attributes changed.
     *	many companies own RBLs. How can one trust a company with an RBL? 
 *	***Heuristic filters***  - popular technique of email-filtering. It uses general spam
  rules to classify incoming email based on message data characteristics as spam/not spam. 
-
 Ex: if email contains Viagra or Ophrah string and some other tokens, it’s spam.
 *	***Bayesian (Statistical) filters*** – popular technique of email-filtering. 
 It correlates the use of tokens (typically words, or sometimes other things), 
