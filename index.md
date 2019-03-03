@@ -7,3 +7,4 @@
 6.  [Network Security](pages/network_security.md)
 7.  [Web Security](pages/web_security.md)
 8.  [Message(email) Security](pages/message_security.md)
+10. [HackTheBox final report](pages/final_report.md)
