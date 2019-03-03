@@ -17,14 +17,19 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 data: "SW4gb3JkZXIgdG8gZ2VuZXJhdGUgdGhlIGludml0ZSBjb2RlLCBtYWtlIGEgUE9TVCByZXF1ZXN0IHRvIC9hcGkvaW52aXRlL2dlbmVyYXRl"
 enctype: "BASE64"
 ```
+
 3. I then decoded the data property using https://www.base64decode.org/ and got the following message:
 
 ```In order to generate the invite code, make a POST request to /api/invite/generate```
 
 4. Finally, I made the POST request to suggested link and received another encoded string:
+
 ```SFZFUkYtVlJIRVAtWExWUVktSVlSUEYtR0lSRUg= ```
+
 I decoded it using BASE64 and got the invite KEY: 
+
 ```HVERF-VRHEP-XLVQY-IYRPF-GIREH```
+
 
 ### Challenge Summary
 I completed 3 challenges:
