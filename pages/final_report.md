@@ -38,6 +38,7 @@ I completed 3 challenges:
 *   Steganograph - Widescreen (20 pts)
 
 ***Total = 70 pts***
+
  ![alt text](../images/final_summary.jpg "Challenge summary")
 
 
