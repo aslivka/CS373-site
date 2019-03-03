@@ -49,7 +49,7 @@ I completed 3 challenges:
 For this challenge, I received a colorful image and had to find the required HTB{flag} from it.
 Since this challenge wasn't classified in Steganography category, the flag information wasn't 
 directly embedded in a secret way  in the provided image. In other words, the flag string wasn't
- hidden using image manipulation techniques like contrast, hue, brightness adjustments. 
+hidden using image manipulation techniques like contrast, hue, brightness adjustments. 
 Therefore, I had to look for another way to extract this info. After some research and hint from 
 HackTheBox forums, I found an obscure computer language, Piet, that interpets image colors as 
 specific computer instructions. With certain color combinations, it can easily print "Hello World". 
@@ -62,6 +62,7 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
 ***HackTheBox flag = HTB{p137_m0ndr14n}***
 
  ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
+ 
 
  ### Challenge 2: Widescreen [ 20 pts ]
 
