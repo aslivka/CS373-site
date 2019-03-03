@@ -69,12 +69,12 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
 
 ***Challenge Prompt:*** Someone has leaked pictures of our unreleased movie. Can you help identify him? 
 
-    For this challenge, I received a movie screenshot image and had to find the required HTB{flag} inside of it.
+For this challenge, I received a movie screenshot image and had to find the required HTB{flag} inside of it.
 This challenge was classified under steganography, so the flag information was embedded inside the image file
 somehow. There are multiple way of hiding information inside an image file. One common way is to 
 encode information within the lowest bits of image information. The lowest bits (as their name implies) 
 have the lowest impact on image appearance and therefore a very popular target of manipulation.
-    In this case, the information was hidden using a much simpler method. First, I used an online image 
+In this case, the information was hidden using a much simpler method. First, I used an online image 
 viewer, [photopea.com](http://www.photopea.com) to open the image for further adjustments. 
 After multiple tweak attempts, I changed the exposure level for bottom black section of image and found the flag.
 See image below for uncovered flag.
