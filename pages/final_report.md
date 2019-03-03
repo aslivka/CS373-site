@@ -65,6 +65,7 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
 
 
  ### Challenge 2: Widescreen [ 20 pts ]
+ ### Challenge 1: Art [ 20 pts ]
 
  ***Category:*** Steganography
 
