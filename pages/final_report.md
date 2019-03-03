@@ -44,7 +44,7 @@ I completed 3 challenges:
 
 ### Challenge 1: Art [ 20 pts ]
 
- ***Category:*** Misc
+***Category:*** Misc
 
 For this challenge, I received a colorful image and had to find the required HTB{flag} from it.
 Since this challenge wasn't classified in Steganography category, the flag information wasn't 
@@ -64,10 +64,10 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
  ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
 
 
- ### Challenge 2: Widescreen [ 20 pts ]
- ### Challenge 1: Art [ 20 pts ]
 
- ***Category:*** Steganography
+### Challenge 2: Widescreen [ 20 pts ]
+
+***Category:*** Steganography
 
 ***Challenge Prompt:*** Someone has leaked pictures of our unreleased movie. Can you help identify him? 
 
