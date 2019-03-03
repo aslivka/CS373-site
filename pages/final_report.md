@@ -62,7 +62,7 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
 ***HackTheBox flag = HTB{p137_m0ndr14n}***
 
  ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
- 
+
 
  ### Challenge 2: Widescreen [ 20 pts ]
 
@@ -75,6 +75,7 @@ This challenge was classified under steganography, so the flag information was e
 somehow. There are multiple way of hiding information inside an image file. One common way is to 
 encode information within the lowest bits of image information. The lowest bits (as their name implies) 
 have the lowest impact on image appearance and therefore a very popular target of manipulation.
+
 In this case, the information was hidden using a much simpler method. First, I used an online image 
 viewer, [photopea.com](http://www.photopea.com) to open the image for further adjustments. 
 After multiple tweak attempts, I changed the exposure level for bottom black section of image and found the flag.
