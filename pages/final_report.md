@@ -52,7 +52,7 @@ Therefore, I had to look for another way to extract this info. After some resear
 HackTheBox forums, I found an obscure computer language, Piet, that interpets image colors as 
 specific computer instructions. With certain color combinations, it can easily print "Hello World". 
 
-[Link](https://en.wikipedia.org/wiki/Esoteric_programming_language#Piet)
+[Piet Wiki Link](https://en.wikipedia.org/wiki/Esoteric_programming_language#Piet)
 
 Finally, I found a Piet interpreter/compiler online and uploaded the challenge image to it. 
 After, I found the HTB flag by looking at Piet program's output. See screenshot below for details. 
@@ -62,7 +62,7 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
  ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
 
  ### Challenge 2: Widescreen [ 20 pts ]
- ***Category: Steganography ***
+ ***Category: Steganography***
 Challenge Prompt: Someone has leaked pictures of our unreleased movie. Can you help identify him? 
 
     For this challenge, I received a movie screenshot image and had to find the required HTB{flag} inside of it.
@@ -71,14 +71,13 @@ somehow. There are multiple way of hiding information inside an image file. One 
 encode information within the lowest bits of image information. The lowest bits (as their name implies) 
 have the lowest impact on image appearance and therefore a very popular target of manipulation.
     In this case, the information was hidden using a much simpler method. First, I used an online image 
-viewer, [Link](http://www.photopea.com) to open the image for further adjustments. 
+viewer, [photopea.com](http://www.photopea.com) to open the image for further adjustments. 
 After multiple tweak attempts, I changed the exposure level for bottom black section of image and found the flag.
 See image below for uncovered flag.
 
 ***HackTheBox flag = HTB{c3r34l_k1ll3r}***
 
  ![alt text](../images/final_ch2.jpg "Challenge 2 screenshot")
-
 
 
 
