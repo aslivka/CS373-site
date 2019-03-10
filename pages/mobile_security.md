@@ -64,8 +64,8 @@ are discussed in a short overview.
 *	Executes commands sent by a remote C&C server.
 
 ***Malware Trend***
-There is an increasing trend in new malware created for mobile OSes. See graph below for details
 
+There is an increasing trend in new malware created for mobile OSes. See graph below for details.
 ![alt text](../images/w9_malware_trends.jpg "Malware trend")
 
 
