@@ -29,14 +29,14 @@ are discussed in a short overview.
 *	Over-the-air updates
 
 ### Mobile OS Security Features
-|Characteristic         |	Android 	    |  iOS 	              |Windows Phone        |
-|-----------------------|:-----------------:|:-------------------:|--------------------:|
-|Approval Review        |	Automated       | 	Manual            |	Manual              |
-|Registration Cost      | 	$25 	        | $99/year 	          |   $19               |
-|App Signing 	        |Self-signed        | Vendor-controlled   |	Vendor-controlled   |
-|Third-party installs 	|Configurable  	    |  Not allowed 	      | Not allowed         |
-|App Isolation 	        | User ID sandbox   |  Directory sandbox  |    Chambers Model   |
-|App Permissions        | 	Static          | 	Dynamic           | Static (manifest)   |
+| Characteristic         |	Android 	    |  iOS 	              | Windows Phone       |
+| -----------------------|:----------------:|:-------------------:| -------------------:|
+| Approval Review        |	Automated       | 	Manual            |	Manual              |
+| Registration Cost      | 	$25 	        | $99/year 	          |   $19               |
+| App Signing 	         | Self-signed      | Vendor-controlled   |	Vendor-controlled   |
+| Third-party installs 	 | Configurable  	|  Not allowed 	      | Not allowed         |
+| App Isolation 	     | User ID sandbox  |  Directory sandbox  |    Chambers Model   |
+| App Permissions        | 	Static          | 	Dynamic           | Static (manifest)   |
 
 ### Mobile Malware History
 #### IKEE – First IOS Malware
