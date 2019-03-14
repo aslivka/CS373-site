@@ -110,8 +110,8 @@ After that, I visited one of the sites that does image decoding/encoding conveni
 
 ![alt text](../images/final_ch3b.jpg "Decode site")
 
-I entered the password ***almost*** into the form field and uploaded the image to be decoded.
-The site spit out the following encoded string: 
+I uploaded the provided image to be decoded on this page and entered the password ***almost*** into the field 
+as well. The site spit out the following encoded string: 
 
 ```SFRCezN2MWxfYzBycH0=```
 
