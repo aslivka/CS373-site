@@ -61,9 +61,9 @@ specific computer instructions. With certain color combinations, it can easily p
 Finally, I found a Piet interpreter/compiler online and uploaded the challenge image to it. 
 After, I found the HTB flag by looking at Piet program's output. See screenshot below for details. 
 
-***Flag = HTB{p137_m0ndr14n}***
+![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
 
- ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
+***Flag = HTB{p137_m0ndr14n}***
 
 
 ### Challenge 2: Widescreen [ 20 pts ]
@@ -83,9 +83,9 @@ viewer, [photopea.com](http://www.photopea.com) to open the image for further ad
 After multiple tweak attempts, I changed the exposure level for bottom black section of image and found the flag.
 See image below for uncovered flag.
 
-***Flag = HTB{c3r34l_k1ll3r}***
+![alt text](../images/final_ch2.jpg "Challenge 2 screenshot")
 
- ![alt text](../images/final_ch2.jpg "Challenge 2 screenshot")
+***Flag = HTB{c3r34l_k1ll3r}***
 
 
 ### Challenge 3: Hackerman [ 30 pts ]
