@@ -59,7 +59,7 @@ specific computer instructions. With certain color combinations, it can easily p
 Finally, I found a Piet interpreter/compiler online and uploaded the challenge image to it. 
 After, I found the HTB flag by looking at Piet program's output. See screenshot below for details. 
 
-***HackTheBox flag = HTB{p137_m0ndr14n}***
+***Flag = HTB{p137_m0ndr14n}***
 
  ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
 
@@ -69,7 +69,7 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
 
 ***Category:*** Steganography
 
-***Challenge Prompt:*** Someone has leaked pictures of our unreleased movie. Can you help identify him? 
+***Prompt:*** Someone has leaked pictures of our unreleased movie. Can you help identify him? 
 
 For this challenge, I received a movie screenshot image and had to find the required HTB{flag} inside of it.
 This challenge was classified under steganography, so the flag information was embedded inside the image file
@@ -82,10 +82,45 @@ viewer, [photopea.com](http://www.photopea.com) to open the image for further ad
 After multiple tweak attempts, I changed the exposure level for bottom black section of image and found the flag.
 See image below for uncovered flag.
 
-***HackTheBox flag = HTB{c3r34l_k1ll3r}***
+***Flag = HTB{c3r34l_k1ll3r}***
 
  ![alt text](../images/final_ch2.jpg "Challenge 2 screenshot")
 
+
+### Challenge 3: Hackerman [ 30 pts ]
+
+***Category:*** Steganography
+
+***Prompt:*** There should be something hidden inside this photo... Can you find out?
+See photo in question below:
+
+![alt text](../images/final_ch3.jpg "Challenge 3 screenshot")
+
+For this challenge, I received an image and had to find the required HTB{flag} inside of it.
+This challenge was classified under steganography, so the flag information was embedded inside the image file
+somehow.
+
+By using just simple image manipulation techniques, I wasn't able to extract any useful info about the flag.
+In frustration, I visited the HackTheBox forums and looked for help on this challenge. The only clue I received 
+for it was the keyword "almost". Since the flag text wasn't directly drawn using pixels in the image,
+my guess it was encoded using another method inside the image data. To decode this encoded message, usually a
+key or password is required to start the process. Using the forum clue, I guessed the key was "almost".
+
+After that, I visited one of the sites that does image decoding/encoding conveniently for the user:
+[Link](https://futureboy.us/stegano/decinput.html). See screenshot of page that decodes the image:
+
+![alt text](../images/final_ch3b.jpg "Decode site"). 
+
+I entered the password ***almost*** into the form field and uploaded the image to be decoded.
+The site spit out the following encoded string: 
+```
+SFRCezN2MWxfYzBycH0=
+```
+
+This looked like an encoded string, so I went to base64decode.org site and decoded it. It read: HTB{3v1l_c0rp}, 
+therefore flag found!
+
+***Flag = HTB{3v1l_c0rp}***
 
 
 [Go Home](../index.md) 
