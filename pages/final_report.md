@@ -34,8 +34,8 @@ I decoded it using BASE64 and got the invite KEY:
 ### Challenge Summary
 I completed 3 challenges:
 *   Misc - Art  (20 pts)
-*   Steganography - Hackerman (30 pts)
 *   Steganograph - Widescreen (20 pts)
+*   Steganography - Hackerman (30 pts)
 
 ***Total = 70 pts***
 
@@ -62,7 +62,6 @@ After, I found the HTB flag by looking at Piet program's output. See screenshot 
 ***Flag = HTB{p137_m0ndr14n}***
 
  ![alt text](../images/final_ch1.jpg "Challenge 1 screenshot")
-
 
 
 ### Challenge 2: Widescreen [ 20 pts ]
@@ -113,9 +112,8 @@ After that, I visited one of the sites that does image decoding/encoding conveni
 
 I entered the password ***almost*** into the form field and uploaded the image to be decoded.
 The site spit out the following encoded string: 
-```
-SFRCezN2MWxfYzBycH0=
-```
+
+```SFRCezN2MWxfYzBycH0=```
 
 This looked like an encoded string, so I went to base64decode.org site and decoded it. It read: HTB{3v1l_c0rp}, 
 therefore flag found!
