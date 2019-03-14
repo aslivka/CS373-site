@@ -101,9 +101,9 @@ somehow.
 
 By using just simple image manipulation techniques, I wasn't able to extract any useful info about the flag.
 In frustration, I visited the HackTheBox forums and looked for help on this challenge. The only clue I received 
-for it was the keyword "almost". Since the flag text wasn't directly drawn using pixels in the image,
+for it was the keyword ***almost***. Since the flag text wasn't directly drawn using pixels in the image,
 my guess it was encoded using another method inside the image data. To decode this encoded message, usually a
-key or password is required to start the process. Using the forum clue, I guessed the key was "almost".
+key or password is required to start the process. Using the forum clue, I guessed the key was ***almost***.
 
 After that, I visited one of the sites that does image decoding/encoding conveniently for the user:
 [Link](https://futureboy.us/stegano/decinput.html). See screenshot of page that decodes the image:
