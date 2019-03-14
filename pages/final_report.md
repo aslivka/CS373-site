@@ -108,7 +108,7 @@ key or password is required to start the process. Using the forum clue, I guesse
 After that, I visited one of the sites that does image decoding/encoding conveniently for the user:
 [Link](https://futureboy.us/stegano/decinput.html). See screenshot of page that decodes the image:
 
-![alt text](../images/final_ch3b.jpg "Decode site"). 
+![alt text](../images/final_ch3b.jpg "Decode site")
 
 I entered the password ***almost*** into the form field and uploaded the image to be decoded.
 The site spit out the following encoded string: 
