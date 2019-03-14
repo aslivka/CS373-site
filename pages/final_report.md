@@ -46,6 +46,8 @@ I completed 3 challenges:
 
 ***Category:*** Misc
 
+***Prompt:*** Can you find the flag?
+
 For this challenge, I received a colorful image and had to find the required HTB{flag} from it.
 Since this challenge wasn't classified in Steganography category, the flag information wasn't 
 directly embedded in a secret way  in the provided image. In other words, the flag string wasn't
