@@ -130,8 +130,9 @@ therefore flag found!
 ***Category:*** Steganography
 
 ***Prompt:*** Can you bring all the boys to the yard? 
-For this challenge, I was given an mp3 song, Title: Milkshake, from 2003 Album The Neptunes Present-Clones-AD
-by artist Kelis. Looking at the file metadata for flag clues didn't help too much. After some google research, I
+
+For this challenge, I was given an mp3 song, ***Milkshake***, from 2003 album ***The Neptunes Present-Clones-AD***
+by artist ***Kelis***. Looking at the file metadata for flag clues didn't help too much. After some google research, I
 found a helpful tutorial on sound file stego analysis using SoundVisualizer program.
 See link provided for more details.
 [Tutorial](https://solusipse.net/blog/post/basic-methods-of-audio-steganography-spectrograms/) 
