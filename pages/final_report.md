@@ -32,12 +32,14 @@ I decoded it using BASE64 and got the invite KEY:
 
 
 ### Challenge Summary
-I completed 3 challenges:
+I completed 5 challenges:
 *   Misc - Art  (20 pts)
-*   Steganograph - Widescreen (20 pts)
-*   Steganography - Hackerman (30 pts)
+*   Stego - Widescreen (20 pts)
+*   Stego - Hackerman (30 pts)
+*   Stego - Milkshake (10 pts)
+*   Crypto - Sick Teacher (20 pts)
 
-***Total = 70 pts***
+***Total = 100 pts***
 
  ![alt text](../images/final_summary.jpg "Challenge summary")
 
@@ -108,7 +110,7 @@ my guess it was encoded using another method inside the image data. To decode th
 key or password is required to start the process. Using the forum clue, I guessed the key was ***almost***.
 
 After that, I visited one of the sites that does image decoding/encoding conveniently for the user:
-[Link](https://futureboy.us/stegano/decinput.html). See screenshot of page that decodes the image:
+. See screenshot of page that decodes the image:
 
 ![alt text](../images/final_ch3b.jpg "Decode site")
 
@@ -121,6 +123,27 @@ This looked like an encoded string, so I went to base64decode.org site and decod
 therefore flag found!
 
 ***Flag = HTB{3v1l_c0rp}***
+
+
+### Challenge 4: Milkshake [ 10 pts ]
+
+***Category:*** Steganography
+
+***Prompt:*** Can you bring all the boys to the yard? 
+For this challenge, I was given an mp3 song, Title: Milkshake, from 2003 Album The Neptunes Present-Clones-AD
+by artist Kelis. Looking at the file metadata for flag clues didn't help too much. After some google research, I
+found a helpful tutorial on sound file stego analysis using SoundVisualizer program.
+See link provided for more details.
+[Tutorial](https://solusipse.net/blog/post/basic-methods-of-audio-steganography-spectrograms/) 
+
+After loading the Milkshake MP3 file into SoundVisualizer, I easily found the flag by just looking
+at the spectrogram of the sound data. It was literally a one-click operation.
+A lot of challenges become easy once you have the right tool. 
+See screenshot below:
+
+![alt text](../images/final_ch4.jpg "Challenge 4 screenshot")
+
+***Flag = HTB{str4wberry_milkshak3}***
 
 
 [Go Home](../index.md) 
