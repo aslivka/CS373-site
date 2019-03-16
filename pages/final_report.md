@@ -172,7 +172,7 @@ Aristocrat or Patristocrat.
 
 [https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html](https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html/)  
 
-After pasting the encrypted text, the plain text was easily deciphered. See screenshot below:
+After pasting the encrypted text, the plain text was easily deciphered. See screenshot below, with flag text circled in red color.
 
 ![alt text](../images/final_ch5a.jpg "Challenge 5 screenshot")
 
