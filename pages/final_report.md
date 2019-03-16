@@ -134,8 +134,7 @@ therefore flag found!
 For this challenge, I was given an mp3 song, ***Milkshake***, from 2003 album ***The Neptunes Present-Clones-AD***
 by artist ***Kelis***. Looking at the file metadata for flag clues didn't help too much. After some google research, I
 found a helpful tutorial on sound file stego analysis using SoundVisualizer program.
-See link provided for more details.
-[Tutorial](https://solusipse.net/blog/post/basic-methods-of-audio-steganography-spectrograms/) 
+See [tutorial link](https://solusipse.net/blog/post/basic-methods-of-audio-steganography-spectrograms/)  provided for more details.
 
 After loading the Milkshake MP3 file into SoundVisualizer, I easily found the flag by just looking
 at the spectrogram of the sound data. It was literally a one-click operation.
@@ -145,6 +144,39 @@ See screenshot below:
 ![alt text](../images/final_ch4.jpg "Challenge 4 screenshot")
 
 ***Flag = HTB{str4wberry_milkshak3}***
+
+
+### Challenge 5: Sick Teacher [ 20 pts ]
+
+***Category:*** Cryptography
+
+***Prompt:*** Can you break the cipher? 
+
+For this challenge, I was given an ecrypted text file with the following text:
+
+```KBJICYP CZ KHLTIKWECD
+
+KHLTIKWECD RWMI GBQW JCNW IBNW BM NHP CZ 2017. JBMLW IKWM, BI KHJ FYCRM QWYP VOBLTGP IC IKCOJHMSJ CZ NWNEWYJ ZYCN HGG CQWY IKW FGCEW.
+IKW KHGG CZ ZHNW GBJIJ IKW ICA 100 OJWYJ BM CYSWY CZ ACBMIJ. HI IKW IBNW CZ RYBIBMF, IKW ICA 3 OJWYJ HYW JIWZHMC118, ZBGGBACJ HMS HKNWS.
+IKWYW HYW JCNW ZCYONJ, H JKCOIECD HMS H JGHLT LKHMMWG. JGHLT HMS JKCOIECD HYW HRWJCNW, EOI IKW ZCYONJ MWWS JCNW GCQW! B RBJK NCYW AWCAGW OJWS IKWN.
+KCAWZOGGP IKBJ BJ WMCOFK IWDI IC KWGA RBIK PCOY JOEJIBIOIBCM! FWI LYHLTBM! AJ SCM'I ZCYFWI IC JOAACYI KHLTIKWECD BZ PCO LHM JAHYW JCNW NCMWP. WQWYP AWMMP KWGAJ!
+
+DCDC - HYYWDWG
+ZGHF GCYWNBAJONSCGCYJBIHNWI
+```
+
+After trying a bunch of cryptography tools online, I couldn't decipher the text for a while. There are simply too many
+encryption algorithms to try though challenges that are worth this few points don't have fancy encryption.
+After more searching, I found the following online decoder that helped me decipher the encoded text. Apparently the cipher used is 
+Aristocrat or Patristocrat.
+
+[https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html](https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html/)  
+
+After pasting the encrypted text, the plain text was easily deciphered. See screenshot below:
+
+![alt text](../images/final_ch5a.jpg "Challenge 5 screenshot")
+
+***Flag = HTB{loremipsumdolorsitamet}***
 
 
 [Go Home](../index.md) 
