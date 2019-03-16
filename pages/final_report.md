@@ -167,7 +167,7 @@ encryption algorithms to try though challenges that are worth this few points do
 After more searching, I found the following online decoder that helped me decipher the encoded text. Apparently the cipher used is 
 Aristocrat or Patristocrat.
 
-[https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html](https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html/)  
+[https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html](https://bionsgadgets.appspot.com/ww_forms/aristo_pat_web_worker3.html)  
 
 After pasting the encrypted text, the plain text was easily deciphered. See screenshot below, with flag text circled in red color.
 
