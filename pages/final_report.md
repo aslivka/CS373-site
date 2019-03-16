@@ -30,6 +30,7 @@ I decoded it using BASE64 and got the invite KEY:
 
 ```HVERF-VRHEP-XLVQY-IYRPF-GIREH```
 
+
 ### Challenge Summary
 I completed 5 challenges:
 *   Misc - Art  (20 pts)
@@ -164,7 +165,6 @@ KCAWZOGGP IKBJ BJ WMCOFK IWDI IC KWGA RBIK PCOY JOEJIBIOIBCM! FWI LYHLTBM! AJ SC
 DCDC - HYYWDWG
 ZGHF GCYWNBAJONSCGCYJBIHNWI
 ```
-
 
 After trying a bunch of cryptography tools online, I couldn't decipher the text for a while. There are simply too many
 encryption algorithms to try though challenges that are worth this few points don't have fancy encryption.
