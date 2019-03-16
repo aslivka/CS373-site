@@ -30,7 +30,6 @@ I decoded it using BASE64 and got the invite KEY:
 
 ```HVERF-VRHEP-XLVQY-IYRPF-GIREH```
 
-
 ### Challenge Summary
 I completed 5 challenges:
 *   Misc - Art  (20 pts)
