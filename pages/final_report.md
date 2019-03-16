@@ -154,7 +154,8 @@ See screenshot below:
 
 For this challenge, I was given an ecrypted text file with the following text:
 
-```KBJICYP CZ KHLTIKWECD
+```javascript
+KBJICYP CZ KHLTIKWECD
 
 KHLTIKWECD RWMI GBQW JCNW IBNW BM NHP CZ 2017. JBMLW IKWM, BI KHJ FYCRM QWYP VOBLTGP IC IKCOJHMSJ CZ NWNEWYJ ZYCN HGG CQWY IKW FGCEW.
 IKW KHGG CZ ZHNW GBJIJ IKW ICA 100 OJWYJ BM CYSWY CZ ACBMIJ. HI IKW IBNW CZ RYBIBMF, IKW ICA 3 OJWYJ HYW JIWZHMC118, ZBGGBACJ HMS HKNWS.
@@ -164,6 +165,7 @@ KCAWZOGGP IKBJ BJ WMCOFK IWDI IC KWGA RBIK PCOY JOEJIBIOIBCM! FWI LYHLTBM! AJ SC
 DCDC - HYYWDWG
 ZGHF GCYWNBAJONSCGCYJBIHNWI
 ```
+
 
 After trying a bunch of cryptography tools online, I couldn't decipher the text for a while. There are simply too many
 encryption algorithms to try though challenges that are worth this few points don't have fancy encryption.
